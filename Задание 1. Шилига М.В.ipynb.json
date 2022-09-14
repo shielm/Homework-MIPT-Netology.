@@ -1,0 +1,91 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "7091e375",
+   "metadata": {},
+   "source": [
+    "# Задание 1. Со словами \"test\", \"testing\"."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "90b7d7bd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "word1 = 'test'\n",
+    "word2 = 'testing'\n",
+    "\n",
+    "lenght1 = len(word1)\n",
+    "lenght2 = len(word2)\n",
+    "\n",
+    "if lenght1%2==0:\n",
+    "    print(word1[int(lenght1/2-1):int(lenght1/2+1)])\n",
+    "else:\n",
+    "    print(word1[int(lenght1/2)])\n",
+    "    \n",
+    "if lenght2%2==0:\n",
+    "    print(word2[int(lenght2/2-1):int(lenght2/2+1)])\n",
+    "else:\n",
+    "    print(word2[int(lenght2/2)])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "de9663f0",
+   "metadata": {},
+   "source": [
+    "# Задание 1.1. С открытым вводом."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "3378de97",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "netology\n",
+      "ol\n"
+     ]
+    }
+   ],
+   "source": [
+    "word = str(input())\n",
+    "\n",
+    "lenght = len(word)\n",
+    "\n",
+    "if lenght%2==0:\n",
+    "    print(word[int(lenght/2-1):int(lenght/2+1)])\n",
+    "else:\n",
+    "    print(word[int(lenght/2)])"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
