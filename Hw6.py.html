@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+from datetime import timedelta
+from datetime import datetime
+start_date=input('Введите начальную дату в формате YYYY-MM-DD: ')
+end_date=input('Введите дату окончания в формате YYYY-MM-DD: ')
+def date_range(start, end):
+    start_datetime=datetime.strptime(start,'%Y-%m-%d')
+    end_datetime=datetime.strptime(end,'%Y-%m-%d')
+    days=[]
+    intermediate_datetime=start_datetime
+    while intermediate_datetime<=end_datetime:
+        intermediate_datetime=intermediate_datetime+timedelta(days=1)
+        print_datetime=datetime.strftime(intermediate_datetime,'%Y-%m-%d')
+        days.append(print_datetime)
+        #print(print_datetime)
+    return(days)
+date_range(start_date, end_date)
+
+
+# In[ ]:
+
+
+
+
